@@ -12,9 +12,7 @@ import express from "express";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-dotenv.config({
-    path:"./.env"
-});
+dotenv.config();
 
 app.use("/api/orders", orderRoutes);  
 app.use("/api/reviews", reviewRoutes);
